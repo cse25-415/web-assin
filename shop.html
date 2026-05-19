@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse cattle for sale at KraalPro. Find bulls, heifers, cows and calves at fair prices in Botswana." />
+  <title>Shop | KraalPro</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .filter-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      align-items: center;
+    }
+    .filter-bar label {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+    }
+    .filter-bar select {
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      background: var(--white);
+      color: var(--text-dark);
+    }
+    .listing-badge {
+      background: var(--gold);
+      color: var(--white);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .listing-meta {
+      font-size: 0.82rem;
+      color: var(--text-mid);
+      margin-bottom: 8px;
+    }
+    .note-box {
+      background: #fff8ee;
+      border-left: 4px solid var(--gold);
+      padding: 15px 20px;
+      border-radius: 4px;
+      margin-bottom: 35px;
+      font-size: 0.9rem;
+      color: var(--text-mid);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <span class="logo-icon">🐂</span>
+        <div class="logo-text">
+          <h1>KraalPro</h1>
+          <span>Premium Cattle Sales</span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="breeds.html">Breeds</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner">
+    <h2>Cattle For Sale</h2>
+    <p>Browse our current listings and find the right cattle for your farm</p>
+  </div>
+
+  <div class="section">
+
+    <div class="note-box">
+      💡 <strong>How to Buy:</strong> Browse the listings below, then contact us using the button on any listing or visit our <a href="contact.html" style="color:var(--brown); font-weight:700;">Contact Page</a> to enquire or place an order.
+    </div>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <label for="filter-type">Filter by:</label>
+      <select id="filter-type">
+        <option value="all">All Types</option>
+        <option value="bull">Bulls</option>
+        <option value="heifer">Heifers</option>
+        <option value="cow">Cows</option>
+        <option value="calf">Calves</option>
+      </select>
+      <select id="filter-breed">
+        <option value="all">All Breeds</option>
+        <option value="brahman">Brahman</option>
+        <option value="nguni">Nguni</option>
+        <option value="hereford">Hereford</option>
+        <option value="bonsmara">Bonsmara</option>
+        <option value="holstein">Holstein</option>
+      </select>
+    </div>
+
+    <!-- LISTINGS GRID -->
+    <div class="cards-grid">
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cow2.jpg" alt="Brahman Bull" />
+        </div>
+        <div class="card-body">
+          <span class="listing-badge">Available</span>
+          <h3>Brahman Bull – 3 Years</h3>
+          <div class="listing-meta">📍 Mahalapye &nbsp;|&nbsp; 🐄 Bull &nbsp;|&nbsp; Age: 3 yrs</div>
+          <p>Strong, healthy Brahman bull. Vet certified. Excellent for improving your herd quality.</p>
+          <div class="card-price">P 14,500</div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cow3.jpg" alt="Nguni Heifers" />
+        </div>
+        <div class="card-body">
+          <span class="listing-badge">Available</span>
+          <h3>Nguni Heifers – Lot of 5</h3>
+          <div class="listing-meta">📍 Serowe &nbsp;|&nbsp; 🐄 Heifer &nbsp;|&nbsp; Age: 18 months</div>
+          <p>5 healthy Nguni heifers, not yet bred. Vaccinated and dewormed. Ready for your herd.</p>
+          <div class="card-price">P 31,000 (lot)</div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cow4.jpg" alt="Hereford Cow" />
+        </div>
+        <div class="card-body">
+          <span class="listing-badge">Available</span>
+          <h3>Hereford Cow + Calf</h3>
+          <div class="listing-meta">📍 Gaborone &nbsp;|&nbsp; 🐄 Cow &nbsp;|&nbsp; Age: 5 yrs</div>
+          <p>Calm and well-tempered Hereford cow with a 3-month bull calf. Great mothering ability.</p>
+          <div class="card-price">P 11,800</div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cow5.jpg" alt="Bonsmara Bull" />
+        </div>
+        <div class="card-body">
+          <span class="listing-badge">Available</span>
+          <h3>Bonsmara Bull – 2 Years</h3>
+          <div class="listing-meta">📍 Francistown &nbsp;|&nbsp; 🐄 Bull &nbsp;|&nbsp; Age: 2 yrs</div>
+          <p>Young Bonsmara bull with excellent genetics. Tested and vet certified. Good conformation.</p>
+          <div class="card-price">P 12,000</div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cow1.jpg" alt="Holstein Dairy Cow" />
+        </div>
+        <div class="card-body">
+          <span class="listing-badge">Available</span>
+          <h3>Holstein Dairy Cow</h3>
+          <div class="listing-meta">📍 Lobatse &nbsp;|&nbsp; 🐄 Cow &nbsp;|&nbsp; Age: 4 yrs</div>
+          <p>High-producing Holstein dairy cow. Producing 22 litres per day. Ideal for a small dairy operation.</p>
+          <div class="card-price">P 18,000</div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cow2.jpg" alt="Brahman Heifers" />
+        </div>
+        <div class="card-body">
+          <span class="listing-badge">Available</span>
+          <h3>Brahman Heifers – Lot of 3</h3>
+          <div class="listing-meta">📍 Palapye &nbsp;|&nbsp; 🐄 Heifer &nbsp;|&nbsp; Age: 14 months</div>
+          <p>3 young Brahman heifers. Weaned, vaccinated, and adapted to bush conditions.</p>
+          <div class="card-price">P 25,500 (lot)</div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cow3.jpg" alt="Nguni Bull" />
+        </div>
+        <div class="card-body">
+          <span class="listing-badge">Available</span>
+          <h3>Nguni Bull – 4 Years</h3>
+          <div class="listing-meta">📍 Kanye &nbsp;|&nbsp; 🐄 Bull &nbsp;|&nbsp; Age: 4 yrs</div>
+          <p>Proven Nguni bull. Has sired 28 calves. Well-tempered and very fertile. Excellent yard sire.</p>
+          <div class="card-price">P 9,500</div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cow4.jpg" alt="Hereford Steer Calves" />
+        </div>
+        <div class="card-body">
+          <span class="listing-badge">Available</span>
+          <h3>Hereford Steer Calves – Lot of 4</h3>
+          <div class="listing-meta">📍 Mochudi &nbsp;|&nbsp; 🐄 Calf &nbsp;|&nbsp; Age: 6 months</div>
+          <p>4 Hereford steer calves ready for feedlot or pasture. Healthy, vaccinated, fast growing.</p>
+          <div class="card-price">P 16,000 (lot)</div>
+          <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <div class="banner-strip">
+    <h2>Don't See What You Need?</h2>
+    <p>We can help source specific breeds on request. Just contact us and tell us what you are looking for.</p>
+    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>🐂 KraalPro</h3>
+        <p>Your trusted partner in premium cattle sales across Botswana. Quality breeds, fair prices, honest service.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="breeds.html">Breeds</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📞 +267 71 234 567</a></li>
+          <li><a href="#">✉️ info@kraalpro.co.bw</a></li>
+          <li><a href="#">📍 Gaborone, Botswana</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 KraalPro. All rights reserved. | Web & Multimedia Development Assignment</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
